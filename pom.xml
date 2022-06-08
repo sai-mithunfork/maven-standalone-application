@@ -33,6 +33,22 @@
 		</dependency>
 
 	</dependencies>
+	
+	<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>Nexus Repository</name>
+	      <url>http://3.110.177.86:9032/sainatraj/repository/facebook-release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Nexus Repository </name>
+	      <url>http://3.110.177.86:9032/sainatraj/repository/facebook-snapshot/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
 
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
